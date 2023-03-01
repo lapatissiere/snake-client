@@ -1,10 +1,7 @@
-const net = require("net");
-
-// establishes a connection with the game server
 const connect = function () {
   const conn = net.createConnection({
-    host: '192.168.141.196',
-    port: '50541',
+    host: "165.227.47.243",
+    port: 50541,
   });
   conn.on("connect", () => {
     console.log("you ded cuz you idled"); // code that does something when the connection is first established
@@ -15,5 +12,4 @@ const connect = function () {
   return conn;
 };
 
-console.log("Connecting ...");
-connect();
+module.exports = connect
