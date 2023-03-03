@@ -1,5 +1,5 @@
 const net = require("net");
-const connect = function() {
+const connect = function () {
   const conn = net.createConnection({
     host: "192.168.141.196",
     port: "50541",
@@ -14,15 +14,15 @@ const connect = function() {
     // setTimeout(() => {
     //   conn.write("Move: up");
     // }, 80);
-  //   let count = 0;
-  //   const Move = setInterval(() => {
-  //     count++;
-  //     conn.write("Move: up");
-  //     if (count === 10) {
-  //       clearInterval(Move);
-  //     }
-  //   }, 50);
-   });
+    //   let count = 0;
+    //   const Move = setInterval(() => {
+    //     count++;
+    //     conn.write("Move: up");
+    //     if (count === 10) {
+    //       clearInterval(Move);
+    //     }
+    //   }, 50);
+  });
 
   conn.on("data", (data) => {
     console.log("Server says: ", data); // code that does something when the connection is first established
