@@ -33,7 +33,7 @@ Prints "Connected to server..." upon successful connection.
 Sets the snake-name to "NFP" upon successful connection.
 Logs server responses to screen.
 
-## Supported commands (https://github.com/lighthouse-labs/snake-client)
+## Supported commands
 
 Commands are passed as 'utf8' strings between [client] and [server](https://github.com/lighthouse-labs/snake-client).
 "Name: NFP"
