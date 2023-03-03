@@ -35,7 +35,7 @@ Logs server responses to screen.
 
 ## Supported commands
 
-Commands are passed as 'utf8' strings between [client] and [server](https://github.com/lighthouse-labs/snake-client).
+Commands are passed as 'utf8' strings between [client]() and [server](https://github.com/lighthouse-labs/snake-client).
 "Name: NFP"
   * Sets the name for snake; `NFP` is the desired name here.
   * Recommended maximum length of name is 3 characters.
