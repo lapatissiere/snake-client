@@ -24,9 +24,12 @@ const connect = function () {
     //   }, 50);
   });
 
-  conn.on("data", (data) => {
-    console.log("Server says: ", data); // code that does something when the connection is first established
-  });
+  conn.on(
+    "data",
+    (key) => {
+      console.log("Server says: ", key);
+    } // code that does something when the connection is first established
+  );
 
   // interpret incoming data as text
   conn.setEncoding("utf8");
